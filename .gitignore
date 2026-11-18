@@ -1,0 +1,15 @@
+# .NET / WPF Build Outputs
+bin/
+obj/
+publish/
+Releases/
+.vs/
+*.user
+*.suo
+
+# Next.js Web Build & Dependencies
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+web/.env*.local

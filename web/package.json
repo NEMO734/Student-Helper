@@ -1,0 +1,20 @@
+{
+  "name": "student-helper-web",
+  "version": "1.5.3",
+  "private": true,
+  "description": "Team Ator's Student Helper — Web Edition (Next.js on Vercel)",
+  "author": "Kingseight (Team Ator)",
+  "scripts": {
+    "predev": "node scripts/copy-assets.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/copy-assets.mjs",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

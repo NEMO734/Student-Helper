@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<RootNamespace>Student_Helper</RootNamespace>
+		<AssemblyName>StudentHelper</AssemblyName>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<DefaultItemExcludes>$(DefaultItemExcludes);web\**</DefaultItemExcludes>
+
+		<!-- App Identity & Version -->
+		<Version>1.5.3</Version>
+		<Title>Team Ator's Student Helper</Title>
+		<Company>Team Ator</Company>
+		<Authors>Kingseight</Authors>
+		<Product>Team Ator's Student Helper</Product>
+
+		<!-- Code Protection -->
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+
+		<!-- Custom App Icon -->
+		<ApplicationIcon>app_icon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.102.2" />
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
+		<PackageReference Include="Velopack" Version="0.0.582" />
+	</ItemGroup>
+
+	<!-- Automatically bundle secret.mp3 into the build -->
+	<ItemGroup>
+		<None Update="secret.mp3">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
